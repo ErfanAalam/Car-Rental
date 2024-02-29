@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script
+      src="https://kit.fontawesome.com/c4a3389572.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
     <title>Travels</title>
-</head>
+  </head>
 
-<body>
+  <body>
     {% block body %}{% endblock %}
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
-
+  </body>
 </html>

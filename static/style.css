@@ -1,0 +1,31 @@
+.main{
+    background-image: url(/static/assests/mianbg.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.card1{
+    background-image: url(/static/assests/travels1.avif);
+    background-size:contain;
+    /* height: 460px;
+    width: 300px; */
+}
+.card2{
+    background-image: url(/static/assests/travels2.avif);
+    background-size:cover;
+    /* height: 200px;
+    width: 400px; */
+}
+.card3{
+    background-image: url(/static/assests/travels3.webp);
+    background-size:cover;
+    /* height: 230px;
+    width: 400px; */
+}
+.card4{
+    background-image: url(/static/assests/travels4.avif);
+    background-size:contain;
+    /* height: 460px;
+    width: 300px; */
+}
