@@ -69,3 +69,15 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+
+  /* about us section */
+   /* float:left
+  shapeoutside circle
+  magibright  */
+
+  .container img{
+    float: left;
+    shape-outside: circle();
+    margin-right: 40px;
+  }
