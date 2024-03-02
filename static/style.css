@@ -100,3 +100,18 @@
 .gallery-cards img:hover {
   box-shadow: 5px 5px 5px 5px black;
 }
+
+.packages-cards {
+  background:rgb(201, 201, 201);
+  width: 360px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+.packages-cards img {
+    height: 100%;
+    width: 100%;
+}
+.packages-cards:hover {
+  box-shadow: 5px 5px 5px 5px black;
+}
