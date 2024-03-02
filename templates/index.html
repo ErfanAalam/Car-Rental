@@ -1,299 +1,186 @@
 {% extends 'base.html' %} {% block body %}
 
-<!-- Component of Navbar -->
-
-<div>
-  <header class="flex justify-between md:p-6 p-4 bg-gray-200 header">
-    <div class="logo md:space-x-2 space-x-1 flex item-center justify-center gap-4 pt-3">
-      <img class="w-10 h-10" src="/static/assests/logo.png" alt="" />
-      <span class="md:text-2xl text-[18px] md:pt-0 pt-1"
-        >Shreenivas Travels</span
-      >
-    </div>
-    <div class="links flex gap-10">
-      <ul class="gap-8 pt-4 hidden md:flex">
-      <a href=""> <li class="hover:text-blue-700 cursor-pointer">Home</li></a>
-      <a href=""><li class="hover:text-blue-700 cursor-pointer">Testimonial</li></a>
-      <a href=""><li class="hover:text-blue-700 cursor-pointer">Packages</li></a>
-      <a href=""> <li class="hover:text-blue-700 cursor-pointer">Gallery</li></a>
-      <a href="aboutus.html"><li class="hover:text-blue-700 cursor-pointer">About Us</li></a>
-      <a href=""><li class="hover:text-blue-700 cursor-pointer">Contact Us</li></a>
-      </ul>
-      <div
-        class="contact p-3 text-[18px] bg-blue-800 text-white rounded-lg hover:bg-blue-900 cursor-pointer"
-      >
-        <i class="fa-solid fa-phone pt-1 text-white"></i>
-        8888836692
-      </div>
-    </div>
-  </header>
-</div>
 
 <!-- Component of Section 1 -->
 
 <div>
-  <main
-    class="main flex p-10 h-[100vh] justify-between relative md:flex-row flex-col-reverse"
-  >
-    <div
-      class="left flex flex-col justify-center gap-10 md:pl-20 pl-4 md:w-[40vw]"
-    >
-      <h1 class="text-5xl font-bold">Welcome to Shree Shrinivas Travels!</h1>
-      <p>
-        Our company was established with the goal of providing premium class
-        travel services to our customers at a competitive price. We believe that
-        everyone should have access to safe, comfortable, and reliable
-        transportation, and we strive to make that a reality for our clients.
-      </p>
-      <div class="btns flex gap-4 text-white">
-        <span
-          class="p-4 bg-blue-800 rounded-lg hover:bg-blue-900 cursor-pointer"
-          >Get Exploration</span
-        >
-        <span
-          class="p-4 bg-blue-800 rounded-lg hover:bg-blue-900 cursor-pointer"
-          >Read More</span
-        >
-      </div>
-    </div>
-    <div class="right">
-      <img
-        class="w-[800px] md:pt-32 mix-blend-multiply"
-        src="/static/assests/sectio1-img.png"
-        alt=""
-      />
-    </div>
-    <div
-      class="form absolute md:p-8 bg-gray-100 flex justify-center bottom-[-440px] md:bottom-[-120px] md:left-60 left-0 md:ml-0 md:mr-0 p-2 md:w-[80%] w-[100%]"
-    >
-      <div
-        class="hotel p-3 bg-blue-800 absolute top-[-57px] md:left-0 left-[120px] px-20 text-white text-2xl cursor-pointer hover:bg-blue-900"
-      >
-        Hotel
-      </div>
-      <div
-        class="hotel p-3 bg-blue-800 absolute top-[-57px] left-[220px] px-20 text-white text-2xl cursor-pointer hover:bg-blue-900 md:flex hidden"
-      >
-        Car
-      </div>
-      <form action="#" class="md:flex gap-4">
-        <div class="flex flex-col md:gap-5">
-          <label for="Destination">Your Destination</label>
-          <input
-            type="text"
-            name=""
-            id="Destination"
-            class="rounded-lg outline-none md:w-56 w-[340px]"
-          />
+    <main class="main flex p-10 h-[100vh] justify-between relative md:flex-row flex-col-reverse">
+        <div class="left flex flex-col justify-center gap-10 md:pl-20 pl-4 md:w-[40vw]">
+            <h1 class="text-5xl font-bold">Welcome to Shree Shrinivas Travels!</h1>
+            <p>
+                Our company was established with the goal of providing premium class
+                travel services to our customers at a competitive price. We believe that
+                everyone should have access to safe, comfortable, and reliable
+                transportation, and we strive to make that a reality for our clients.
+            </p>
+            <div class="btns flex gap-4 text-white">
+                <span class="p-4 bg-blue-800 rounded-lg hover:bg-blue-900 cursor-pointer">Get Exploration</span>
+                <span class="p-4 bg-blue-800 rounded-lg hover:bg-blue-900 cursor-pointer">Read More</span>
+            </div>
         </div>
-
-        <div class="flex gap-5">
-          <div class="flex flex-col gap-5">
-            <label for="checkin">Check In</label>
-            <input type="date" name="" id="checkin" class="rounded-lg" />
-          </div>
-
-          <div class="flex flex-col gap-5">
-            <label for="checkout">Check out</label>
-            <input type="date" name="" id="checkout" class="rounded-lg" />
-          </div>
+        <div class="right">
+            <img class="w-[800px] md:pt-32 mix-blend-multiply" src="/static/assests/sectio1-img.png" alt="" />
         </div>
+        <div
+            class="form absolute md:p-8 bg-gray-100 flex justify-center bottom-[-440px] md:bottom-[-120px] md:left-60 left-0 md:ml-0 md:mr-0 p-2 md:w-[80%] w-[100%]">
+            <div
+                class="hotel p-3 bg-blue-800 absolute top-[-57px] md:left-0 left-[120px] px-20 text-white text-2xl cursor-pointer hover:bg-blue-900">
+                Hotel
+            </div>
+            <div
+                class="hotel p-3 bg-blue-800 absolute top-[-57px] left-[220px] px-20 text-white text-2xl cursor-pointer hover:bg-blue-900 md:flex hidden">
+                Car
+            </div>
+            <form action="#" class="md:flex gap-4">
+                <div class="flex flex-col md:gap-5">
+                    <label for="Destination">Your Destination</label>
+                    <input type="text" name="" id="Destination" class="rounded-lg outline-none md:w-56 w-[340px]" />
+                </div>
 
-        <div class="flex gap-5">
-          <div class="flex flex-col gap-5">
-            <label for="child">Child</label>
-            <input
-              type="text"
-              name=""
-              id="child"
-              class="rounded-lg md:w-56 w-[160px]"
-            />
-          </div>
+                <div class="flex gap-5">
+                    <div class="flex flex-col gap-5">
+                        <label for="checkin">Check In</label>
+                        <input type="date" name="" id="checkin" class="rounded-lg" />
+                    </div>
 
-          <div class="flex flex-col gap-5">
-            <label for="adult">Adult</label>
-            <input
-              type="text"
-              name=""
-              id="adult"
-              class="rounded-lg md:w-56 w-[160px]"
-            />
-          </div>
+                    <div class="flex flex-col gap-5">
+                        <label for="checkout">Check out</label>
+                        <input type="date" name="" id="checkout" class="rounded-lg" />
+                    </div>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="flex flex-col gap-5">
+                        <label for="child">Child</label>
+                        <input type="text" name="" id="child" class="rounded-lg md:w-56 w-[160px]" />
+                    </div>
+
+                    <div class="flex flex-col gap-5">
+                        <label for="adult">Adult</label>
+                        <input type="text" name="" id="adult" class="rounded-lg md:w-56 w-[160px]" />
+                    </div>
+                </div>
+
+                <div class="pt-12">
+                    <span
+                        class="p-4 px-8 mx-20 md:mx-0 text-white text-2xl bg-blue-800 rounded-lg cursor-pointer hover:bg-blue-900">Book
+                        Now</span>
+                </div>
+            </form>
         </div>
-
-        <div class="pt-12">
-          <span
-            class="p-4 px-8 mx-20 md:mx-0 text-white text-2xl bg-blue-800 rounded-lg cursor-pointer hover:bg-blue-900"
-            >Book Now</span
-          >
-        </div>
-      </form>
-    </div>
-  </main>
+    </main>
 </div>
 
 <!-- Component for section 2 -->
 
 <div>
-  <div
-    class="md:px-96 md:pt-32 pt-[500px] text-center md:mb-40 mb-10 flex flex-col">
-    <div class="heading">
-      <h2 class="md:text-7xl text-4xl font-[500]">Find next place to Visit</h2>
-    </div>
-    <div class="sec2-cards pt-20 text-left flex md:flex-row flex-col gap-10 items-center">
-      <div
-        class="flex flex-col justify-end rounded-lg bg-cover bg-center overflow-hidden card1 p-4 text-white md:h-[460px] md:w-[300px] w-[300px] h-[300px]">
-        <p class="text-3xl font-bold">Pune</p>
-        <p class="text-[23px]">Starting from $1200</p>
-      </div>
-
-      <div class="space-y-8">
-        <div
-          class="flex flex-col justify-end rounded-lg overflow-hidden card2 p-4 text-white md:h-[200px] md:w-[400px] w-[300px] h-[400px]">
-          <p class="text-3xl font-bold">Pune</p>
-          <p class="text-[23px]">Starting from $1200</p>
+    <div class="md:px-96 md:pt-32 pt-[500px] text-center md:mb-40 mb-10 flex flex-col">
+        <div class="heading">
+            <h2 class="md:text-7xl text-4xl font-[500]">Find next place to Visit</h2>
         </div>
+        <div class="sec2-cards pt-20 text-left flex md:flex-row flex-col gap-10 items-center">
+            <div
+                class="flex flex-col justify-end rounded-lg bg-cover bg-center overflow-hidden card1 p-4 text-white md:h-[460px] md:w-[300px] w-[300px] h-[300px]">
+                <p class="text-3xl font-bold">Pune</p>
+                <p class="text-[23px]">Starting from $1200</p>
+            </div>
 
-        <div
-          class="flex flex-col justify-end rounded-lg overflow-hidden card3 p-4 text-white md:h-[230px] md:w-[400px] w-[300px] h-[400px]"
-        >
-          <p class="text-3xl font-bold">Pune</p>
-          <p class="text-[23px]">Starting from $1200</p>
+            <div class="space-y-8">
+                <div
+                    class="flex flex-col justify-end rounded-lg overflow-hidden card2 p-4 text-white md:h-[200px] md:w-[400px] w-[300px] h-[400px]">
+                    <p class="text-3xl font-bold">Pune</p>
+                    <p class="text-[23px]">Starting from $1200</p>
+                </div>
+
+                <div
+                    class="flex flex-col justify-end rounded-lg overflow-hidden card3 p-4 text-white md:h-[230px] md:w-[400px] w-[300px] h-[400px]">
+                    <p class="text-3xl font-bold">Pune</p>
+                    <p class="text-[23px]">Starting from $1200</p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col justify-end rounded-lg overflow-hidden card4 p-4 text-white md:h-[460px] md:w-[300px] w-[300px] h-[300px]">
+                <p class="text-3xl font-bold">Pune</p>
+                <p class="text-[23px]">Starting from $1200</p>
+            </div>
         </div>
-      </div>
-
-      <div
-        class="flex flex-col justify-end rounded-lg overflow-hidden card4 p-4 text-white md:h-[460px] md:w-[300px] w-[300px] h-[300px]"
-      >
-        <p class="text-3xl font-bold">Pune</p>
-        <p class="text-[23px]">Starting from $1200</p>
-      </div>
     </div>
-  </div>
 </div>
 
 <!-- Component for section 3 -->
 
 <div>
-  <div class="bg-gray-200 md:flex md:p-28 p-8 gap-10">
-    <div class="left md:w-[60%]">
-      <img
-        class="md:w-[800px] md:h-[550px] w-[600px] h-[300px] rounded-lg"
-        src="/static/assests/punevisit.jpg"
-        alt=""
-      />
+    <div class="bg-gray-200 md:flex md:p-28 p-8 gap-10">
+        <div class="left md:w-[60%]">
+            <img class="md:w-[800px] md:h-[550px] w-[600px] h-[300px] rounded-lg" src="/static/assests/punevisit.jpg"
+                alt="" />
+        </div>
+        <div class="right md:w-[35%] space-y-8 pt-10">
+            <h2 class="md:text-5xl text-2xl font-bold">
+                Ram Mandir: A Grand Temple in the Heart of Pune
+            </h2>
+            <p class="text-[20px]">
+                Ram mandir Pune: Pune, known as the cultural capital of Maharashtra, is
+                home to numerous temples that showcase the city's rich cultural and
+                spiritual heritage. One of the most iconic temples in Pune is the Ram
+                Mandir located in the bustling Pune Camp area. This magnificent temple
+                is dedicated to Lord Ram and sees thousands of devotees flocking daily
+                to offer prayers and seek blessings.
+            </p>
+            <button class="p-4 px-6 bg-blue-800 text-white rounded-lg mx-24">
+                Book Now
+            </button>
+        </div>
     </div>
-    <div class="right md:w-[35%] space-y-8 pt-10">
-      <h2 class="md:text-5xl text-2xl font-bold">
-        Ram Mandir: A Grand Temple in the Heart of Pune
-      </h2>
-      <p class="text-[20px]">
-        Ram mandir Pune: Pune, known as the cultural capital of Maharashtra, is
-        home to numerous temples that showcase the city's rich cultural and
-        spiritual heritage. One of the most iconic temples in Pune is the Ram
-        Mandir located in the bustling Pune Camp area. This magnificent temple
-        is dedicated to Lord Ram and sees thousands of devotees flocking daily
-        to offer prayers and seek blessings.
-      </p>
-      <button class="p-4 px-6 bg-blue-800 text-white rounded-lg mx-24">
-        Book Now
-      </button>
-    </div>
-  </div>
 </div>
 
 <!--component for section 4 -->
 
 <div>
-  <div class="bg-white md:flex md:flex-row-reverse md:p-28 p-8 gap-56">
-    <div class="left md:w-[50%]">
-      <img
-        class="md:w-[800px] md:h-[550px] w-[600px] h-[300px] rounded-lg"
-        src="/static/assests/punevisit2.jpg"
-        alt=""
-      />
+    <div class="bg-white md:flex md:flex-row-reverse md:p-28 p-8 gap-56">
+        <div class="left md:w-[50%]">
+            <img class="md:w-[800px] md:h-[550px] w-[600px] h-[300px] rounded-lg" src="/static/assests/punevisit2.jpg"
+                alt="" />
+        </div>
+        <div class="right md:w-[40%] space-y-8 pt-10">
+            <h2 class="md:text-5xl text-2xl font-bold">
+                Sinhagad : An ancient hill fortress
+            </h2>
+            <p class="text-[20px]">
+                The fort was captured by Tanaji Malusare and his brother. Sinhagad
+                (Lion's Fort) fort was strategically built to provide natural protection
+                from the enemies due to its very steep slopes.The walls of the forts and
+                bastions were constructed only at key places. There are two gates to
+                enter the fort named Kalyan Darwaja and Pune Darwaza.
+            </p>
+            <button class="p-4 px-6 bg-blue-800 text-white rounded-lg md:mx-0 mx-24">
+                Book Now
+            </button>
+        </div>
     </div>
-    <div class="right md:w-[40%] space-y-8 pt-10">
-      <h2 class="md:text-5xl text-2xl font-bold">
-        Sinhagad : An ancient hill fortress
-      </h2>
-      <p class="text-[20px]">
-        The fort was captured by Tanaji Malusare and his brother. Sinhagad
-        (Lion's Fort) fort was strategically built to provide natural protection
-        from the enemies due to its very steep slopes.The walls of the forts and
-        bastions were constructed only at key places. There are two gates to
-        enter the fort named Kalyan Darwaja and Pune Darwaza.
-      </p>
-      <button class="p-4 px-6 bg-blue-800 text-white rounded-lg md:mx-0 mx-24">
-        Book Now
-      </button>
-    </div>
-  </div>
 </div>
 
 <!-- component of section 5 -->
 
 <div>
-  <div
-    class="bg-gray-100 py-10 flex flex-col items-center gap-10 px-4 scroller"
-  >
-    <p class="text-6xl">
-      <span class="font-bold">Pune</span> Tourist Places and Hotels
-    </p>
-    <div class="card md:w-[60%] md:h-[800px] w-[100%] h-[400px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-      <img src="/static/assests/punevisit2.jpg" alt="" />
-      <img src="/static/assests/punevisit3.jpg" alt="" />
-      <img src="/static//assests/punevisit6.webp" alt="" />
-      <img src="/static//assests/punevisit4.jpg" alt="" />
-      <img src="/static//assests/punevisit5.avif" alt="" />
+    <div class="bg-gray-100 py-10 flex flex-col items-center gap-10 px-4 scroller">
+        <p class="text-6xl">
+            <span class="font-bold">Pune</span> Tourist Places and Hotels
+        </p>
+        <div class="card md:w-[60%] md:h-[800px] w-[100%] h-[400px]">
+            <img src="/static/assests/punevisit.jpg" alt="" />
+            <img src="/static/assests/punevisit2.jpg" alt="" />
+            <img src="/static/assests/punevisit3.jpg" alt="" />
+            <img src="/static//assests/punevisit6.webp" alt="" />
+            <img src="/static//assests/punevisit4.jpg" alt="" />
+            <img src="/static//assests/punevisit5.avif" alt="" />
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Component for footer -->
 
-<div>
-  <footer class="bg-black flex md:flex-row flex-col md:gap-72 gap-10 text-white md:px-40 px-10 py-20">
-    <div class="desc space-y-4 md:w-[20vw] w-[60vw] pt-5">
-      <h3 class="text-3xl">Shree Shrinivas Travels</h3>
-      <p>
-        Our core fleet of 30+ vehicles provides 24/7 service across Pune and
-        Mumbai operations, and we also have our presence in Ahmed Nagar, Nashik,
-        Aurangabad, Goa, Bangalore, and Delhi.
-      </p>
-      <div class="social space-x-6 md:block flex flex-row">
-        <i class="fa-brands fa-facebook hover:bg-blue-200 p-2 rounded-lg border-2 border-blue-200 cursor-pointer"></i>
-        <i class="fa-brands fa-twitter hover:bg-blue-200 p-2 rounded-lg border-2 border-blue-200 cursor-pointer"></i>
-        <i class="fa-brands fa-instagram hover:bg-blue-200 p-2 rounded-lg border-2 border-blue-200 cursor-pointer"></i>
-        <i class="fa-brands fa-linkedin hover:bg-blue-200 p-2 rounded-lg border-2 border-blue-200 cursor-pointer"></i>
-      </div>
-    </div>
 
-    <div class="flex flex-col md:flex-row p-4 md:gap-40 gap-20">
-      <div class="links space-y-4">
-        <h2 class="text-3xl cursor-pointer">Quick Links</h2>
-        <ul class=" space-y-4">
-          <li class="hover:text-blue-200 cursor-pointer"><i class="fa-solid fa-angle-right "></i> Home</li>
-          <li class="hover:text-blue-200 cursor-pointer"><i class="fa-solid fa-angle-right "></i> Testimonial</li>
-          <li class="hover:text-blue-200 cursor-pointer"><i class="fa-solid fa-angle-right "></i> Packages</li>
-          <li class="hover:text-blue-200 cursor-pointer"><i class="fa-solid fa-angle-right "></i> Gallery</li>
-          <li class="hover:text-blue-200 cursor-pointer"><i class="fa-solid fa-angle-right "></i> About us</li>
-          <li class="hover:text-blue-200 cursor-pointer"><i class="fa-solid fa-angle-right "></i> Contact Us</li>
-        </ul>
-      </div>
-
-      <div class="contact w-[200px] space-y-4">
-        <h2 class="text-3xl cursor-pointer">Contact</h2>
-        <div class="location">
-          Flat No. C4-102. 29 Gold Coast, Tingare Nagar Dhanori Pune -411032
-        </div>
-        <div>+918888836692</div>
-        <div>+917219789977</div>
-        <div>sales@shrinivastravels.com</div>
-      </div>
-    </div>
-  </footer>
-</div>
 
 {% endblock %}
