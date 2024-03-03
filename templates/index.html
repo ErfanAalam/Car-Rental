@@ -24,11 +24,11 @@
         <div
             class="form absolute md:p-8 bg-gray-100 flex justify-center bottom-[-440px] md:bottom-[-120px] md:left-60 left-0 md:ml-0 md:mr-0 p-2 md:w-[80%] w-[100%]">
             <div
-                class="hotel p-3 rounded-t-lg bg-pink-500 absolute top-[-57px] md:left-0 left-[120px] px-20 text-white text-2xl cursor-pointer hover:bg-blue-900">
+                class="hotel p-3 rounded-t-lg bg-pink-500 absolute top-[-57px] md:left-0 left-[120px] px-20 text-white text-2xl cursor-pointer hover:bg-pink-700">
                 Hotel
             </div>
             <div
-                class="hotel p-3 rounded-t-lg bg-pink-500 absolute top-[-57px] left-[220px] px-20 text-white text-2xl cursor-pointer hover:bg-blue-900 md:flex hidden">
+                class="hotel p-3 rounded-t-lg bg-pink-500 absolute top-[-57px] left-[220px] px-20 text-white text-2xl cursor-pointer hover:bg-pink-700 md:flex hidden">
                 Car
             </div>
             <form action="#" class="md:flex gap-4">
@@ -63,7 +63,7 @@
 
                 <div class="pt-12">
                     <span
-                        class="p-4 px-8 mx-20 md:mx-0 text-white text-2xl bg-pink-500 rounded-lg cursor-pointer hover:bg-blue-900">Book
+                        class="p-4 px-8 mx-20 md:mx-0 text-white text-2xl bg-pink-500 rounded-lg cursor-pointer hover:bg-pink-700">Book
                         Now</span>
                 </div>
             </form>
@@ -111,7 +111,7 @@
 <!-- Component for section 3 -->
 
 <div>
-    <div class="bg-pink-100 md:flex md:p-28 p-8 gap-10">
+    <div class="bg-gradient-to-r from-pink-100 to-pink-300 md:flex md:p-28 p-8 gap-10">
         <div class="left md:w-[60%]">
             <img class="md:w-[800px] md:h-[550px] w-[600px] h-[300px] rounded-lg" src="/static/assests/punevisit.jpg"
                 alt="" />
@@ -128,7 +128,7 @@
                 is dedicated to Lord Ram and sees thousands of devotees flocking daily
                 to offer prayers and seek blessings.
             </p>
-            <button class="p-4 px-6 bg-pink-500 text-white rounded-lg mx-24">
+            <button class="p-4 px-4 bg-pink-500 hover:bg-pink-700 text-white rounded-lg mx-24">
                 Book Now
             </button>
         </div>
@@ -154,7 +154,7 @@
                 bastions were constructed only at key places. There are two gates to
                 enter the fort named Kalyan Darwaja and Pune Darwaza.
             </p>
-            <button class="p-4 px-6 bg-pink-500 text-white rounded-lg md:mx-0 mx-24">
+            <button class="p-4 px-4 bg-pink-500 hover:bg-pink-700 text-white rounded-lg md:mx-0 mx-24">
                 Book Now
             </button>
         </div>
@@ -164,17 +164,33 @@
 <!-- component of section 5 -->
 
 <div>
-    <div class="bg-pink-100 py-10 flex flex-col items-center gap-10 px-4 scroller">
-        <p class="text-6xl">
+    <div class="bg-gradient-to-r from-red-100 to-pink-200 py-10 flex flex-col items-center gap-10 px-4 scroller">
+        <p class="md:text-6xl text-3xl">
             <span class="font-bold">Pune</span> Tourist Places and Hotels
         </p>
-        <div class="card md:w-[60%] md:h-[800px] w-[100%] h-[400px]">
-            <img src="/static/assests/punevisit.jpg" alt="" />
-            <img src="/static/assests/punevisit2.jpg" alt="" />
-            <img src="/static/assests/punevisit3.jpg" alt="" />
-            <img src="/static//assests/punevisit6.webp" alt="" />
-            <img src="/static//assests/punevisit4.jpg" alt="" />
-            <img src="/static//assests/punevisit5.avif" alt="" />
+        <div class="md:w-[80vw] w-[90vw] justify-center flex mt-8 p-4">
+            <div class="slider relative">
+                <div class="flex">
+                    <div class="slide w-auto">
+                        <img class="md:w-[1200px] w-[1200px] md:h-[600px] h-[400px]" src="/static/assests/punevisit4.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide w-auto">
+                        <img class="md:w-[1200px] w-[1200px] md:h-[600px] h-[400px]" src="/static/assests/punevisit3.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide w-auto">
+                        <img class="md:w-[1200px] w-[1200px] md:h-[600px] h-[400px]" src="/static/assests/punevisit6.webp" alt="Slide 3">
+                    </div>
+                    <div class="slide w-auto">
+                        <img class="md:w-[1200px] w-[1200px] md:h-[600px] h-[400px]" src="/static/assests/punevisit2.jpg" alt="Slide 3">
+                    </div>
+                    <div class="slide w-auto">
+                        <img class="md:w-[1200px] w-[1200px] md:h-[600px] h-[400px]" src="/static/assests/punevisit.jpg" alt="Slide 3">
+                    </div>
+                    <div class="slide w-auto">
+                        <img class="md:w-[1200px] w-[1200px] md:h-[600px] h-[400px]" src="/static/assests/punevisit5.avif" alt="Slide 3">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
