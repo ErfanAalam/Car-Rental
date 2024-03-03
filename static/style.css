@@ -1,12 +1,14 @@
 /* Header component */
 
-.links li{
-    font-size: 18px;
+.links li {
+  font-size: 18px;
 }
 
-.links li:hover{
-    border-bottom: 2px solid rgb(91, 137, 198);
+.links li:hover {
+  border-bottom: 2px solid rgb(91, 137, 198);
 }
+
+/* Main components */
 
 .main {
   background-image: url(/static/assests/mianbg.jpg);
@@ -19,7 +21,13 @@
   background-image: url(/static/assests/travels1.avif);
   background-size: contain;
   filter: drop-shadow(10px 10px 2px #000);
+  background-position: bottom;
 }
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+  transform: scale(1.03);
+}
+
 .card2 {
   background-image: url(/static/assests/travels2.avif);
   background-size: cover;
@@ -40,7 +48,7 @@
   filter: drop-shadow(10px 10px 2px #000);
 }
 
-.card {
+.indexcard {
   width: 60%;
   height: 800px;
   display: flex;
@@ -49,7 +57,7 @@
   scroll-snap-type: x mandatory;
 }
 
-.card > img {
+.indexcard > img {
   width: 120%;
   height: 100%;
   object-fit: cover;
@@ -60,7 +68,7 @@
   text-shadow: 5px 5px 3px rgb(143, 141, 141);
 }
 
-.card::-webkit-scrollbar{
+.indexcard::-webkit-scrollbar {
   display: none;
 }
 
@@ -80,6 +88,13 @@
   background: #555;
 }
 
+/* image scrollwe and slideshower in index html */
+
+.slide {
+  display: inline-block;
+}
+
+
 /* About us Component CSS */
 
 .container img {
@@ -94,33 +109,31 @@
   height: 300px;
   background-size: cover;
   background-position: center;
+  background-color: #565454;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
+
+.gallery-cards:hover {
+  background-color: #999;
+  transform: scale(1.1);
+}
+
 .gallery-cards img {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #222;
+  mix-blend-mode: hard-light;
+  transition: all 0.3s ease-in-out;
 }
+
 .gallery-cards img:hover {
   box-shadow: 5px 5px 5px 5px black;
+  background-color: #999;
 }
-
-/* .packages-cards {
-  background:rgb(201, 201, 201);
-  width: 360px;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-}
-.packages-cards img {
-    height: 100%;
-    width: 100%;
-}
-.packages-cards:hover {
-  box-shadow: 5px 5px 5px 5px black;
-} */
 
 /* packages css */
-
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 
@@ -134,20 +147,14 @@
   --font-text: "Lato", sans-serif;
 }
 
-
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-h2 {
+.card__title {
   font-size: 2.25rem;
   font-family: var(--font-title);
   color: var(--white);
   line-height: 1.1;
 }
 
-p {
+.card__description {
   font-family: var(--font-text);
   font-size: 1rem;
   line-height: 1.5;
@@ -188,7 +195,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-self: flex-end;
-  height: 55%;
+  height: 65%;
   padding: 12% 1.25rem 1.875rem;
   background: linear-gradient(
     180deg,
@@ -301,8 +308,3 @@ p {
     transition-delay: 500ms;
   }
 }
-
-
-
-
-
