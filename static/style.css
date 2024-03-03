@@ -5,7 +5,7 @@
 }
 
 .links li:hover {
-  border-bottom: 2px solid rgb(91, 137, 198);
+  border-bottom: 2px solid rgb(196, 126, 179);
 }
 
 /* Main components */
@@ -18,30 +18,37 @@
 }
 
 .card1 {
-  background-image: url(/static/assests/travels1.avif);
-  background-size: contain;
-  filter: drop-shadow(10px 10px 2px #000);
-  background-position: bottom;
+  transition: all ease-in 0.4s;
+  background-color: #565454;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card1 img{
+  height: 100%;
+}
+.card1:hover img{
+  mix-blend-mode:hard-light;
+  filter: blur(5px);
+  
+}
+.card1 div{
+  transition: all ease-in 0.4s;
+}
+.card1:hover div{
+  width: 100%;
+  height: 100%;
+  color: black;
+  top:180px;
+}
+.card2:hover div{
+  top:80px;
+
 }
 
-.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+
+.card1:hover{
   transform: scale(1.03);
-}
-
-.card2 {
-  background-image: url(/static/assests/travels2.avif);
-  background-size: cover;
-  filter: drop-shadow(10px 10px 2px #000);
-}
-.card3 {
-  background-image: url(/static/assests/travels3.webp);
-  background-size: cover;
-  filter: drop-shadow(10px 10px 2px #000);
-}
-.card4 {
-  background-image: url(/static/assests/travels4.avif);
-  background-size: contain;
-  filter: drop-shadow(10px 10px 2px #000);
+  background-color: #999;
 }
 
 .left img {
@@ -105,7 +112,6 @@
 /* Gallery Component */
 
 .gallery-cards {
-  width: 450px;
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -139,7 +145,7 @@
 
 :root {
   /* Colors */
-  --brand-color: hsl(46, 100%, 50%);
+  --brand-color: hsl(318, 36%, 57%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
   /* Fonts */
@@ -236,7 +242,7 @@
   background-color: var(--brand-color);
   font-family: var(--font-title);
   font-size: 1.125rem;
-  color: var(--black);
+  color: var(--white);
 }
 
 .card__button:focus {

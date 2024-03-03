@@ -3,8 +3,8 @@ const features = document.querySelector(".features");
 const close = document.querySelector(".close")
 
 hamburger.addEventListener("click",()=>{
-    if (features.classList.contains("-translate-x-96")) {
-        features.classList.remove("-translate-x-96");
+    if (features.classList.contains("translate-x-96")) {
+        features.classList.remove("translate-x-96");
     }
 })
 hamburger.addEventListener("click",()=>{
@@ -15,7 +15,7 @@ close.addEventListener("click",()=>{
 })
 
 close.addEventListener("click",() =>{
-    features.classList.add("-translate-x-96")
+    features.classList.add("translate-x-96")
 })
 
 // image slider component
