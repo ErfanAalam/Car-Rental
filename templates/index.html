@@ -4,7 +4,7 @@
 <!-- Component of Section 1 -->
 
 <div>
-    <main class="main flex p-10 h-[100vh] justify-between relative mt-20 md:flex-row flex-col-reverse">
+    <main class="main flex md:h-[70vh] h-[100vh] p-10 justify-between mt-20 md:flex-row flex-col-reverse">
         <div class="left flex flex-col justify-center gap-10 md:pl-20 pl-4 md:w-[40vw]">
             <h1 class="text-5xl font-bold">Welcome to Shree Shrinivas Travels!</h1>
             <p>
@@ -19,62 +19,66 @@
             </div>
         </div>
         <div class="right">
-            <img class="w-[800px] md:pt-32 mix-blend-multiply" src="/static/assests/sectio1-img.png" alt="" />
+            <img class="w-[800px] mix-blend-multiply" src="/static/assests/sectio1-img.png" alt="" />
         </div>
-        <div
-            class="form absolute md:p-8 bg-gray-100 flex justify-center bottom-[-440px] md:bottom-[-120px] md:left-60 left-0 md:ml-0 md:mr-0 p-2 md:w-[80%] w-[100%]">
-            <div
-                class="hotel p-3 rounded-t-lg bg-pink-500 absolute top-[-57px] left-0 px-20 text-white text-2xl cursor-pointer active:bg-pink-700 hover:bg-pink-700">
-                Hotel
-            </div>
-            <div
-                class="hotel p-3 rounded-t-lg bg-pink-500 absolute top-[-57px] left-[220px] px-20 text-white text-2xl cursor-pointer active:bg-pink-700 hover:bg-pink-700 md:flex hidden">
-                Car
-            </div>
-            <form action="#" class="md:flex gap-4">
-                <div class="flex flex-col md:gap-5">
-                    <label for="Destination">Your Destination</label>
-                    <input type="text" name="" id="Destination" class="rounded-lg outline-none md:w-56 w-[340px]" />
-                </div>
-
-                <div class="flex gap-5">
-                    <div class="flex flex-col gap-5">
-                        <label for="checkin">Check In</label>
-                        <input type="date" name="" id="checkin" class="rounded-lg" />
-                    </div>
-
-                    <div class="flex flex-col gap-5">
-                        <label for="checkout">Check out</label>
-                        <input type="date" name="" id="checkout" class="rounded-lg" />
-                    </div>
-                </div>
-
-                <div class="flex gap-5">
-                    <div class="flex flex-col gap-5">
-                        <label for="child">Child</label>
-                        <input type="text" name="" id="child" class="rounded-lg md:w-56 w-[160px]" />
-                    </div>
-
-                    <div class="flex flex-col gap-5">
-                        <label for="adult">Adult</label>
-                        <input type="text" name="" id="adult" class="rounded-lg md:w-56 w-[160px]" />
-                    </div>
-                </div>
-
-                <div class="pt-12">
-                    <span
-                        class="p-4 px-8 mx-20 md:mx-0 text-white text-2xl bg-pink-500 rounded-lg cursor-pointer hover:bg-pink-700">Book
-                        Now</span>
-                </div>
-            </form>
-        </div>
+       
     </main>
+</div>
+
+<div
+class="form md:p-8 bg-pink-200 flex flex-col flex-wrap md:justify-center items-center mt-4 md:ml-0 md:mr-0 p-2 ">
+<div class="flex gap-3 justify-start">
+    <div
+    class="hotel md:p-3 p-1 rounded-t-lg bg-pink-500  md:px-20 px-10 text-white text-2xl cursor-pointer active:bg-pink-700 hover:bg-pink-700">
+    Hotel
+</div>
+<div
+    class="hotel md:p-3 p-1 rounded-t-lg bg-pink-500  left-[220px] md:px-20 px-10 text-white text-2xl cursor-pointer active:bg-pink-700 hover:bg-pink-700 md:flex">
+    Car
+</div>
+</div>
+<form action="#" class="flex gap-4 flex-col md:flex-row flex-wrap justify-center md:w-[80%] border-2 md:p-10 pb-10 p-2 border-black">
+    <div class="flex flex-col md:gap-5">
+        <label for="Destination">Your Destination</label>
+        <input type="text" name="" id="Destination" class="rounded-lg outline-none md:w-56 w-[100%]" />
+    </div>
+
+    <div class="flex gap-5">
+        <div class="flex flex-col gap-5">
+            <label for="checkin">Check In</label>
+            <input type="date" name="" id="checkin" class="rounded-lg" />
+        </div>
+
+        <div class="flex flex-col gap-5">
+            <label for="checkout">Check out</label>
+            <input type="date" name="" id="checkout" class="rounded-lg" />
+        </div>
+    </div>
+
+    <div class="flex gap-5">
+        <div class="flex flex-col gap-5">
+            <label for="child">Child</label>
+            <input type="text" name="" id="child" class="rounded-lg md:w-56 w-[160px]" />
+        </div>
+
+        <div class="flex flex-col gap-5">
+            <label for="adult">Adult</label>
+            <input type="text" name="" id="adult" class="rounded-lg md:w-56 w-[160px]" />
+        </div>
+    </div>
+
+    <div class="pt-12">
+        <span
+            class="p-4 px-8 mx-20 md:mx-0 text-white text-2xl bg-pink-500 rounded-lg cursor-pointer hover:bg-pink-700">Book
+            Now</span>
+    </div>
+</form>
 </div>
 
 <!-- Component for section 2 -->
 
 <div>
-    <div class="md:px-96 md:pt-32 pt-[500px] text-center md:mb-40 mb-10 flex flex-col">
+    <div class="md:px-96 md:pt-32 text-center md:mb-40 mb-10 mt-10 flex flex-col">
         <div class="heading">
             <h2 class="md:text-7xl text-4xl font-[500]">Find next place to Visit</h2>
         </div>
