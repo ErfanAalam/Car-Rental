@@ -10,6 +10,37 @@
 
 /* Main components */
 
+
+/* Animation part */
+@keyframes scale-up {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+.ram{
+  animation: 2.5s linear forwards scale-up;
+  animation-timeline: view();
+  transition: all 0.4s;
+}
+
+.Sinhagad{
+  animation: 2.5s linear forwards scale-up;
+  animation-timeline: view();
+  transition: all 0.4s;
+}
+.place{
+  animation: 2.5s linear forwards scale-up;
+  animation-timeline: view();
+  transition: all 0.4s;
+}
+
+/* Animation part */
+
 .main {
   background-image: url(/static/assests/mianbg.jpg);
   height: 70vh;
@@ -388,3 +419,5 @@
   top: 0;
   position: absolute;
 }
+
+/* Map component */
