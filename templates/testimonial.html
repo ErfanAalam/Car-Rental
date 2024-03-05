@@ -7,10 +7,10 @@
         <div class="testimonial-card">
             <div class="user">
                 <div class="userlogo">
-                    <p>{{testimonial[0]}}</p>
+                    <p>{{testimonial[0][0]}}</p>
                 </div>
                 <div class="username">
-                    {{testimonial[1]}}
+                    {{testimonial[0]}}
                 </div>
             </div>
             <div class="stars">
@@ -19,8 +19,8 @@
                 {% endfor %}
             </div>
             <div class="testimonial-content">
-                <h2>{{testimonial[2]}}</h2>
-                <p>{{testimonial[3]}}</p>
+                <h2>{{testimonial[1]}}</h2>
+                <p>{{testimonial[2]}}</p>
             </div>
             <div class="testimonial-author">
                 <p>- Sarah and John Smith, Happy Travelers</p>
