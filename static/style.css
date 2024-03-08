@@ -10,7 +10,6 @@
 
 /* Main components */
 
-
 /* Animation part */
 @keyframes scale-up {
   from {
@@ -21,19 +20,18 @@
   }
 }
 
-
-.ram{
+.ram {
   animation: 2.5s linear forwards scale-up;
   animation-timeline: view();
   transition: all 0.4s;
 }
 
-.Sinhagad{
+.Sinhagad {
   animation: 2.5s linear forwards scale-up;
   animation-timeline: view();
   transition: all 0.4s;
 }
-.place{
+.place {
   animation: 2.5s linear forwards scale-up;
   animation-timeline: view();
   transition: all 0.4s;
@@ -55,31 +53,30 @@
   overflow: hidden;
 }
 
-.card1 img{
+.card1 img {
   height: 100%;
 }
 
-.card1:hover img{
-  mix-blend-mode:hard-light;
+.card1:hover img {
+  mix-blend-mode: hard-light;
   filter: blur(5px);
 }
 
-
-.card1 div{
+.card1 div {
   transition: all ease-in 0.4s;
 }
-.card1:hover div{
+.card1:hover div {
   width: 100%;
   height: 100%;
   color: black;
-  top:180px;
+  top: 180px;
 }
 
-.card2:hover div{
-  top:80px;
+.card2:hover div {
+  top: 80px;
 }
 
-.card1:hover{
+.card1:hover {
   transform: scale(1.03);
   background-color: #999;
 }
@@ -97,7 +94,7 @@
   scroll-snap-type: x mandatory;
 }
 
-.indexcard>img {
+.indexcard > img {
   width: 120%;
   height: 100%;
   object-fit: cover;
@@ -133,7 +130,6 @@
 .slide {
   display: inline-block;
 }
-
 
 /* About us Component CSS */
 
@@ -206,16 +202,16 @@
   color: #888;
 }
 
-.stars{
+.stars {
   color: rgb(206, 206, 85);
 }
-.user{
+.user {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.userlogo{
+.userlogo {
   width: 50px;
   display: flex;
   align-items: center;
@@ -254,7 +250,7 @@
   color: var(--white);
 }
 
-.flow>*+* {
+.flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
 
@@ -271,7 +267,7 @@
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
-.card>* {
+.card > * {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
@@ -290,10 +286,12 @@
   align-self: flex-end;
   height: 65%;
   padding: 12% 1.25rem 1.875rem;
-  background: linear-gradient(180deg,
-      hsla(0, 0%, 0%, 0) 0%,
-      hsla(0, 0%, 0%, 0.3) 10%,
-      hsl(0, 0%, 0%) 100%);
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
 }
 
 .card__content--container {
@@ -337,7 +335,7 @@
   outline-offset: -5px;
 }
 
-@media (any-hover: hover)  {
+@media (any-hover: hover) {
   .card__content {
     transform: translateY(62%);
     transition: transform 500ms ease-out;
@@ -356,7 +354,7 @@
     transition: transform 500ms ease-in;
   }
 
-  .card__content--container> :not(.card__title),
+  .card__content--container > :not(.card__title),
   .card__button {
     opacity: 0;
     transition: transform 500ms ease-out, opacity 500ms ease-out;
@@ -383,9 +381,9 @@
     transform: scale(1.3);
   }
 
-  .card:hover .card__content--container> :not(.card__title),
+  .card:hover .card__content--container > :not(.card__title),
   .card:hover .card__button,
-  .card:focus-within .card__content--container> :not(.card__title),
+  .card:focus-within .card__content--container > :not(.card__title),
   .card:focus-within .card__button {
     opacity: 1;
     transition: opacity 500ms ease-in;
@@ -401,7 +399,6 @@
     transition-delay: 500ms;
   }
 }
-
 
 /* google maps component  */
 .google-map {
@@ -420,5 +417,47 @@
   position: absolute;
 }
 
+.features {
+  gap: 20px;
+  padding-left: 0;
+  display: flex;
+  height: auto;
+  width: auto;
+  padding-right: 0;
+  background: transparent;
+  transition: all 0.5s;
+  padding-top: 0.6rem;
+  /* font-size: 4rem; */
+}
+.features li {
+  font-size: 20px;
+}
 
+/* features gap-8 md:pt-4 absolute md:static right-0 space-x-10 pt-10 md:pl-0 
+pl-10 md:backdrop-filter-none md:bg-transparent md:h-auto h-[110vh] md:w-auto 
+md:pr-0 pr-52 bg-pink-400 md:flex */
+/* translate-x-96 md:translate-x-0 */
+/* transition-all duration-500 */
 
+@media screen and (max-width: 1200px) {
+  .features {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70vw;
+    margin-left: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 13rem;
+    background: pink;
+    height: 110vh;
+    /* transform: translateX(24rem); */
+  }
+}
