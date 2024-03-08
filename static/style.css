@@ -15,11 +15,16 @@
   from {
     transform: scale(0.6);
   }
+
   to {
     transform: scale(1);
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d41a34b7017f346e5e5b0e6b8315413d3aa80dbb
 .ram {
   animation: 2.5s linear forwards scale-up;
   animation-timeline: view();
@@ -31,6 +36,10 @@
   animation-timeline: view();
   transition: all 0.4s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d41a34b7017f346e5e5b0e6b8315413d3aa80dbb
 .place {
   animation: 2.5s linear forwards scale-up;
   animation-timeline: view();
@@ -62,9 +71,17 @@
   filter: blur(5px);
 }
 
+<<<<<<< HEAD
 .card1 div {
   transition: all ease-in 0.4s;
 }
+=======
+
+.card1 div {
+  transition: all ease-in 0.4s;
+}
+
+>>>>>>> d41a34b7017f346e5e5b0e6b8315413d3aa80dbb
 .card1:hover div {
   width: 100%;
   height: 100%;
@@ -171,7 +188,8 @@
 /* Testimonail Component */
 
 .testimonial-card {
-  background-color: #ffe0e6; /* Light pink */
+  background-color: #ffe0e6;
+  /* Light pink */
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -205,6 +223,10 @@
 .stars {
   color: rgb(206, 206, 85);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d41a34b7017f346e5e5b0e6b8315413d3aa80dbb
 .user {
   display: flex;
   gap: 10px;
@@ -412,7 +434,7 @@
 .google-map iframe {
   height: 70%;
   width: 70%;
-  left: 0;
+  left: 15%;
   top: 0;
   position: absolute;
 }
@@ -433,6 +455,7 @@
   font-size: 20px;
 }
 
+<<<<<<< HEAD
 /* features gap-8 md:pt-4 absolute md:static right-0 space-x-10 pt-10 md:pl-0 
 pl-10 md:backdrop-filter-none md:bg-transparent md:h-auto h-[110vh] md:w-auto 
 md:pr-0 pr-52 bg-pink-400 md:flex */
@@ -461,3 +484,5 @@ md:pr-0 pr-52 bg-pink-400 md:flex */
     /* transform: translateX(24rem); */
   }
 }
+=======
+>>>>>>> d41a34b7017f346e5e5b0e6b8315413d3aa80dbb

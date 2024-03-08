@@ -1,16 +1,25 @@
 <div>
     <header class="flex justify-between md:p-6 px-1 backdrop-blur-3xl bg-white/80 header w-[100%] fixed top-0 z-10 ">
-        <a href="/" class="logo md:space-x-2 space-x-0 flex  items-center md:flex-row flex-col md:gap-3 gap-2 pt-3 md:mx-4">
+        <a href="/"
+            class="logo md:space-x-2 space-x-0 flex  items-center md:flex-row flex-col md:gap-3 gap-2 pt-3 md:mx-4">
             <img class="w-10 h-10" src="/static/assests/logo.png" alt="" />
             <span class="md:text-2xl text-[18px] md:pt-0 pt-1 pl-4 font-[600]">Shreenivas Travels</span>
         </a>
         <div class="links flex gap-10">
+<<<<<<< HEAD
             <ul class="features md:translate-x-0 translate-x-96">
             <i class="close fa-solid fa-xmark md:hidden absolute top-4 left-4"></i>
+=======
+            <ul class="features gap-8 md:pt-4 absolute md:static right-0 space-x-10 pt-10 md:pl-0 pl-10 md:backdrop-filter-none md:bg-transparent md:h-auto h-[110vh] md:w-auto md:pr-0 pr-52 bg-pink-400 md:flex
+            translate-x-96 md:translate-x-0
+          transition-all duration-500
+            ">
+                <i class="close fa-solid fa-xmark md:hidden absolute top-4 left-4"></i>
+>>>>>>> d41a34b7017f346e5e5b0e6b8315413d3aa80dbb
                 <a href="/">
                     <li class="hover:text-pink-600 cursor-pointer">Home</li>
                 </a>
-                <a href="">
+                <a href="/testimonial">
                     <li class="hover:text-pink-600 cursor-pointer">Testimonial</li>
                 </a>
                 <a href="/packages">
@@ -28,11 +37,13 @@
             </ul>
             <div class="flex gap-3 justify-center items-center">
                 <div class="contact p-3 text-[18px] bg-pink-500 text-white rounded-lg hover:bg-pink-700 cursor-pointer">
-                    <i class="fa-solid fa-phone pt-1 text-white"></i>
-                    8888836692
+                    <a href="tel:+918888836692">
+                        <i class="fa-solid fa-phone pt-1 text-white"></i>
+                        8888836692
+                    </a>
                 </div>
                 <i class="hamburger fa-solid fa-bars block md:hidden text-[20px]"></i>
-                
+
             </div>
         </div>
     </header>
