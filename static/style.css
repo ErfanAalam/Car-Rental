@@ -16,24 +16,26 @@
   from {
     transform: scale(0.6);
   }
+
   to {
     transform: scale(1);
   }
 }
 
 
-.ram{
+.ram {
   animation: 2.5s linear forwards scale-up;
   animation-timeline: view();
   transition: all 0.4s;
 }
 
-.Sinhagad{
+.Sinhagad {
   animation: 2.5s linear forwards scale-up;
   animation-timeline: view();
   transition: all 0.4s;
 }
-.place{
+
+.place {
   animation: 2.5s linear forwards scale-up;
   animation-timeline: view();
   transition: all 0.4s;
@@ -55,31 +57,32 @@
   overflow: hidden;
 }
 
-.card1 img{
+.card1 img {
   height: 100%;
 }
 
-.card1:hover img{
-  mix-blend-mode:hard-light;
+.card1:hover img {
+  mix-blend-mode: hard-light;
   filter: blur(5px);
 }
 
 
-.card1 div{
+.card1 div {
   transition: all ease-in 0.4s;
 }
-.card1:hover div{
+
+.card1:hover div {
   width: 100%;
   height: 100%;
   color: black;
-  top:180px;
+  top: 180px;
 }
 
-.card2:hover div{
-  top:80px;
+.card2:hover div {
+  top: 80px;
 }
 
-.card1:hover{
+.card1:hover {
   transform: scale(1.03);
   background-color: #999;
 }
@@ -175,7 +178,8 @@
 /* Testimonail Component */
 
 .testimonial-card {
-  background-color: #ffe0e6; /* Light pink */
+  background-color: #ffe0e6;
+  /* Light pink */
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -206,16 +210,17 @@
   color: #888;
 }
 
-.stars{
+.stars {
   color: rgb(206, 206, 85);
 }
-.user{
+
+.user {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.userlogo{
+.userlogo {
   width: 50px;
   display: flex;
   align-items: center;
@@ -337,7 +342,7 @@
   outline-offset: -5px;
 }
 
-@media (any-hover: hover)  {
+@media (any-hover: hover) {
   .card__content {
     transform: translateY(62%);
     transition: transform 500ms ease-out;
@@ -415,10 +420,9 @@
 .google-map iframe {
   height: 70%;
   width: 70%;
-  left: 0;
+  left: 15%;
   top: 0;
   position: absolute;
 }
-
 
 

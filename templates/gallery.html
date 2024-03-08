@@ -5,52 +5,11 @@
 <div class="flex flex-col items-center mt-20">
   <h4 class="text-5xl font-bold mt-10">Our gallery</h4>
   <div class="flex justify-center my-10 md:gap-10 gap-10 mx-2 flex-wrap">
+    {% for image in gallery_images %}
     <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
+      <img src="/static/assests/{{image}}" alt="" />
     </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit2.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit3.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit4.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit5.avif" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit6.webp" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-    </div>
-    <div class="gallery-cards md:w-[450px] w-[330px]">
-      <img src="/static/assests/punevisit.jpg" alt="" />
-    </div>
-    
+    {% endfor %}
   </div>
 </div>
 
