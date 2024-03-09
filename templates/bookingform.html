@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script
+      src="https://kit.fontawesome.com/c4a3389572.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Book Cars on Rent</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container md:flex  justify-center mt-8">
+        <form class="max-w-[700px] mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h3 class="mb-4 text-3xl font-bold">Booking Details</h3>
+            <hr class="h-4">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                    Name
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                    Email
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="contact">
+                    Contact Number
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="contact" type="tel" placeholder="Your Contact Number">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="pickup-date">
+                    Pickup Date
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="pickup-date" type="date">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="return-date">
+                    Return Date
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="return-date" type="date">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="pickup-time">
+                    Pickup Time
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="pickup-time" type="time">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="return-time">
+                    Return Time
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="return-time" type="time">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="pickup-address">
+                    Pickup Address
+                </label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="pickup-address" rows="3" placeholder="Enter Pickup Address"></textarea>
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 mr-4 md:px-12 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Pay In Advance (Rs.300/-)
+                </button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 md:px-12 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Pay Full Amount(Rs.2500/-)
+                </button>
+            </div>
+            <div class="flex justify-center text-3xl bg-pink-300 p-4 mt-16 rounded-lg">
+                <i class="fa-solid fa-phone pt-1 text-white"></i>
+                   +91 8888836692
+            </div>
+        </form>
+        <div class="border-2 md:w-[25vw] h-full ">
+            <div class="flex justify-center py-4 bg-pink-200 text-2xl">
+                <h3>Booking Summary</h3>
+            </div>
+            <div class="column flex justify-around py-3 px-4">
+                <div class="px-10">Journey Type</div>
+                <div class="px-10">: outstation</div>
+            </div>
+            <hr>
+            <div class="column flex justify-between py-3 px-4">
+                <div class="px-10">PickUp city</div>
+                <div class="px-10 ">: Pune, Maharashtra, India</div>
+            </div>
+            <hr>
+            <div class="column flex justify-around py-3 px-4">
+                <div class="px-10">Drop City</div>
+                <div class="px-10">: Kaas Pathar</div>
+            </div>
+            <hr>
+            <div class="column flex justify-around py-3 px-4">
+                <div class="px-10">Base Fare</div>
+                <div class="px-10">:  Rs 2,500 Per Day (250 KMs)</div>
+            </div>
+            <hr>
+            <div class="column flex justify-around py-3 px-4">
+                <div class="px-10">Inter-State Tax</div>
+                <div class="px-10">:  Excluded</div>
+            </div>
+            <hr>
+            <div class="column flex justify-around py-3 px-4">
+                <div class="px-10">Toll & Parking</div>
+                <div class="px-10">:  Excluded</div>
+            </div>
+            <hr>
+            <div class="column flex justify-around py-3 px-4">
+                <div class="px-10">Total KMs</div>
+                <div class="px-10">:   250 Km</div>
+            </div>
+            <hr>
+            <div class="column flex justify-around py-3 px-4">
+                <div class="px-10">Extra Km</div>
+                <div class="px-10">:  Rs 10</div>
+            </div>
+            <hr>
+            <div class="column flex justify-around py-3 px-4">
+                <div class="px-10">Driver Allowance</div>
+                <div class="px-10">:  0</div>
+            </div>
+
+            <div class="bg-pink-300 text-[20px] py-4">
+                <div class="flex justify-center">
+                    <p>Gross Total: Rs. 2,500/-</p>
+                </div>
+                <div class="flex justify-center">
+                    <p>(Excluding Toll, Parking, Tax & Inter-State Tax)</p>
+                </div>
+                <div class="flex justify-center">
+                    <p>Support : +91 8888836692</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
